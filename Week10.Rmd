@@ -266,7 +266,7 @@ In this part, the tokenized words are joined with the filtered Loughran sentimen
 # Join with the Loughran sentiment lexicon
 beautiful_and_damned_sentiments <- beautiful_and_damned_words %>%
   inner_join(loughran_posneg)
-
+beautiful_and_damned_sentiments
 ```
 
 Sentiment Counting:
@@ -277,6 +277,7 @@ Count the occurrences of positive and negative words in the corpus to understand
 # Count the occurrences of positive and negative words
 sentiment_counts <- beautiful_and_damned_sentiments %>%
   count(sentiment)
+sentiment_counts
 ```
 
 Sentiment Visualization:
